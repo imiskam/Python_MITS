@@ -1,8 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
-import csv
-import json
-
 # Задание 1
 # Введите два числа с клавиатуры. Поделите одно на другое.
 # Обработайте ошибку деления на ноль, если ошибок нет, то результат
