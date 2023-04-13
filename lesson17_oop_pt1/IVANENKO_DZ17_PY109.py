@@ -1,3 +1,6 @@
+import csv
+from datetime import datetime
+
 # Задание 1
 # Создайте класс Example. В нём пропишите 3 (метода) функции. Две
 # переменные задайте статически, две динамически.
@@ -8,6 +11,7 @@
 # Создайте объект класса.
 # Напечатайте обе функции
 # Напечатайте переменную a
+
 class Example:
     static_value_1 = 1
     static_value_2 = 2
@@ -67,6 +71,7 @@ calc_operation_1.subtract()
 calc_operation_1.multiply()
 calc_operation_1.divide()
 
+
 #################################################################################
 
 # Домашнее задание
@@ -111,3 +116,104 @@ class Homework:
 obj_1 = Homework()
 print(obj_1.execute_conditions())
 print(obj_1.get_length())
+
+
+#################################################################################
+
+# Дополнительное домашнее задание:
+# 1. Создать класс "Сотрудник"
+# 2. Определить атрибуты класса: имя, фамилия, должность, зарплата
+# 3. Определить конструктор класса для инициализации атрибутов
+# 4. Реализовать методы для изменения и получения значений каждого атрибута
+# 5. Реализовать метод для вывода информации о сотруднике на экран
+# 6. Создать несколько объектов класса "Сотрудник"
+# 7. Продемонстрировать работу методов на созданных объектах
+#
+# Расширение задачи:
+# 8. Добавить в класс "Сотрудник" метод для изменения зарплаты на заданное значение
+# 9. Добавить в класс "Сотрудник" метод для увеличения зарплаты на заданное процентное значение
+# 10. Добавить в класс "Сотрудник" метод для сравнения зарплаты текущего объекта
+# с зарплатой другого объекта класса "Сотрудник"
+# 11. Продемонстрировать работу новых методов на созданных объектах.
+#
+# **** реализовать метод, который будет записывать в CSV-файл изменение зарплаты по сотруднику
+# (в момент изменения зарплаты - создается запись в CSV)
+
+class Employee:
+    def __init__(self, name, surname, position, salary):
+        self.name = name
+        self.surname = surname
+        self.position = position
+        self.salary = salary
+
+    def get_name(self):
+        return self.name
+
+    def set_name(self, name):
+        self.name = name
+
+    def get_surname(self):
+        return self.surname
+
+    def set_surname(self, surname):
+        self.surname = surname
+
+    def get_position(self):
+        return self.position
+
+    def set_position(self, position):
+        self.position = position
+
+    def get_salary(self):
+        return self.salary
+
+    def set_salary(self, salary):
+        with open("salary_changes_list.csv", "a", encoding="UTF-8", newline="") as csv_file:
+            writer = csv.writer(csv_file)
+            changed_salary_date = datetime.now()
+            self.salary = salary
+            writer.writerow([self.name, self.surname, self.salary, changed_salary_date])
+
+    # Функция записывает в файл изменение зарплаты в процентах ()
+    def set_salary_by_percents(self, percent):
+        with open("salary_changes_list.csv", "a", encoding="UTF-8", newline="") as csv_file:
+            writer = csv.writer(csv_file)
+            changed_salary_date = datetime.now()
+            self.salary = self.salary * (1 + percent / 100)
+            writer.writerow([self.name, self.surname, self.salary, percent, changed_salary_date])
+
+    def get_full_employee_info(self):
+        return self.name, self.surname, self.position, self.salary
+
+    def compare_employees_salary(self, employee):
+        # Процентная разница = (a/b-1)*100, где a = Большее число, b = Меньшее число
+        salary_difference_in_percent = abs((self.salary / employee.get_salary() - 1) * 100).__round__(1)
+        print(f"Зарплата {self.name} - {self.get_salary()}")
+        print(f"Зарплата {employee.name} - {employee.get_salary()}")
+        if self.get_salary() > employee.get_salary():
+            print(f"Зарплата {self.name} больше, чем у {employee.name} на {salary_difference_in_percent}%")
+        elif self.get_salary() < employee.get_salary():
+            print(f"Зарплата {self.name} меньше, чем у {employee.name} на {salary_difference_in_percent}%")
+        else:
+            print(f"Зарплата {self.name} такая же, как у {employee.name}")
+
+
+# Создание экземпляров класса
+employee_1 = Employee("George", "Washington", "Senior Python Developer", 1000)
+employee_2 = Employee("Abraham", "Lincoln", "Junior PHP Developer", 500)
+
+# Вызовы методов
+employee_1.get_salary()
+employee_1.set_salary(1300)
+employee_1.get_full_employee_info()
+
+employee_2.get_position()
+employee_2.set_position("Middle PHP Developer")
+employee_2.get_full_employee_info()
+
+employee_1.set_salary_by_percents(15)
+employee_1.get_salary()
+employee_2.set_salary_by_percents(20)
+employee_2.get_salary()
+
+employee_2.compare_employees_salary(employee_1)
