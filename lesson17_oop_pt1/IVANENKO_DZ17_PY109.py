@@ -186,7 +186,7 @@ class Employee:
         return self.name, self.surname, self.position, self.salary
 
     def compare_employees_salary(self, employee):
-        # Процентная разница = (a/b-1)*100, где a = Большее число, b = Меньшее число
+        # Процентная разница = (a/b-1)*100
         salary_difference_in_percent = abs((self.salary / employee.get_salary() - 1) * 100).__round__(1)
         print(f"Зарплата {self.name} - {self.get_salary()}")
         print(f"Зарплата {employee.name} - {employee.get_salary()}")
