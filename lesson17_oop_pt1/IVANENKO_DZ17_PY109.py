@@ -174,7 +174,7 @@ class Employee:
             self.salary = salary
             writer.writerow([self.name, self.surname, self.salary, changed_salary_date])
 
-    # Функция записывает в файл изменение зарплаты в процентах ()
+    # Функция записывает в файл изменение зарплаты в процентах
     def set_salary_by_percents(self, percent):
         with open("salary_changes_list.csv", "a", encoding="UTF-8", newline="") as csv_file:
             writer = csv.writer(csv_file)
