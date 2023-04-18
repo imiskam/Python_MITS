@@ -35,9 +35,11 @@ class Tomato:
         self._state = 0
 
     def grow(self):
-        if self._state < 3:
+        if self._state == 3:
+            print(f"Томат №{self._index} перезрел, срочно пора начинать сбор!")
+        elif self._state < 3:
             self._state += 1
-        print(f"Томат №{self._index} в стадии: {self.states[self._state]}")
+            print(f"Томат №{self._index} в стадии: {self.states[self._state]}")
 
     def is_ripe(self):
         return self._state == 3
@@ -106,11 +108,10 @@ if __name__ == "__main__":
     gardener.work()
     gardener.work()
     gardener.work()
-
+    gardener.work()
     gardener.harvest()
 
     gardener.work()
-
     gardener.harvest()
 
     Gardener.knowledge_base()
