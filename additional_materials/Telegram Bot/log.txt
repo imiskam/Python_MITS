@@ -1,0 +1,1042 @@
+executor.py [LINE:362] #INFO     [2022-07-31 16:46:20,406] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 16:46:20,994] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 16:46:20,994] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 17:32:06,130] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 17:32:06,130] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 17:32:07,007] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 17:32:07,137] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 17:32:07,137] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 17:43:37,433] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 17:43:37,434] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 17:43:38,306] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 17:43:38,449] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 17:43:38,449] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 17:48:34,740] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 17:48:34,740] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 17:48:36,082] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 17:48:36,369] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 17:48:36,369] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:08:08,462] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:08:08,462] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:08:10,315] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:08:11,138] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:08:11,138] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 18:08:32,103] Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of bold entity at byte offset 146")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 91, in mailing_list
+    await bot.send_message(message.chat.id, f'*Рассылка завершена \n'
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of bold entity at byte offset 146
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:10:04,828] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:10:04,829] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:10:05,697] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:10:05,824] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:10:05,824] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 18:10:13,409] Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of bold entity at byte offset 146")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 91, in mailing_list
+    await bot.send_message(message.chat.id, f'*Рассылка завершена \n'
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of bold entity at byte offset 146
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:12:38,276] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:12:38,276] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:12:39,164] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:12:39,290] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:12:39,291] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 18:12:47,091] Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of bold entity at byte offset 146")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 91, in mailing_list
+    await bot.send_message(message.chat.id, f'*Рассылка завершена \n'
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of bold entity at byte offset 146
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:13:31,214] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:13:31,215] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:13:33,302] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:13:34,278] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:13:34,278] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 18:13:42,959] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of bold entity at byte offset 146")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 91, in mailing_list
+    await bot.send_message(message.chat.id, f'*Рассылка завершена \n'
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of bold entity at byte offset 146
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:14:24,036] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:14:24,037] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:14:25,678] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:14:26,287] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:14:26,287] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:14:28,682] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:14:28,683] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:14:29,536] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:14:29,910] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:14:29,910] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:15:26,348] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:15:26,349] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:15:28,855] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:15:29,666] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:15:29,667] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 18:15:35,806] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of bold entity at byte offset 146")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 91, in mailing_list
+    await bot.send_message(message.chat.id, f'*Рассылка завершена \n'
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of bold entity at byte offset 146
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:17:15,797] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:17:15,798] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:17:17,547] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:17:18,111] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:17:18,112] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 18:18:03,742] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 18:18:03,743] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 18:18:04,610] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 18:18:04,725] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 18:18:04,726] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:16:51,178] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:16:51,179] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:16:54,119] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:16:54,251] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:16:54,251] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:17:18,093] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:17:18,094] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:17:18,947] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:17:19,081] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:17:19,081] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:17:31,828] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:17:31,828] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:17:32,699] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:17:32,833] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:17:32,833] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:17:49,027] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:17:49,028] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:17:50,782] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:17:51,476] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:17:51,476] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:53:16,403] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:53:16,403] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:53:17,348] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:53:17,491] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:53:17,491] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:53:20,549] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer("Начинаем настройку. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:53:26,160] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer("Начинаем настройку. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:53:55,168] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:53:55,169] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:53:56,791] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:53:57,441] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:53:57,441] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:54:07,462] Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer("Начинаем настройку. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:55:18,476] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:55:18,476] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:55:21,905] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:55:23,015] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:55:23,015] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:55:29,257] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer("Начинаем настройку. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:56:25,289] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:56:25,290] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:56:26,971] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:56:27,686] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:56:27,686] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:56:28,954] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer("Начинаем настройку. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:56:37,556] Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer("Начинаем настройку. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:57:19,248] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:57:19,249] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:57:20,898] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:57:21,459] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:57:21,459] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:57:39,401] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:57:39,402] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:57:40,359] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:57:40,497] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:57:40,497] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:58:05,189] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:58:05,189] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:58:06,081] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:58:06,205] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:58:06,206] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:58:07,906] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer(r"Начинаем настройку \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+base_events.py [LINE:1744] #ERROR    [2022-07-31 19:58:09,759] Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 47, in enter_me_info
+    await message.answer(r"Начинаем настройку \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:58:38,629] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:58:38,630] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:58:40,910] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:58:41,959] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:58:41,959] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 19:59:09,824] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 19:59:09,825] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 19:59:12,036] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 19:59:13,069] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 19:59:13,070] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:00:08,049] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:00:08,050] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:00:08,919] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:00:09,047] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:00:09,047] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:00:29,692] Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 62, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:01:10,275] Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 62, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:01:14,982] Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 62, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:01:19,454] Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 62, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:01:44,433] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:01:44,434] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:01:45,412] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:01:45,832] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:01:45,832] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:01:48,202] Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("'FSMContext' object is not iterable")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 61, in answer_for_state_Q1
+    for _ in state:
+TypeError: 'FSMContext' object is not iterable
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:01:55,977] Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("'FSMContext' object is not iterable")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 61, in answer_for_state_Q1
+    for _ in state:
+TypeError: 'FSMContext' object is not iterable
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:04:11,862] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:04:11,863] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:04:13,503] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:04:14,155] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:04:14,155] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:04:16,418] Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 64, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:06:41,855] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:06:41,856] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:06:43,586] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:06:44,210] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:06:44,210] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:06:47,598] Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 64, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:09:24,031] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:09:24,032] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:09:26,135] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:09:27,033] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:09:27,033] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:09:30,133] Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 64, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:14:38,539] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:14:38,540] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:14:40,794] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:14:41,221] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:14:41,221] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:15:22,653] Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 65, in answer_for_state_Q1
+    await message.answer("Ваша ссылка сохранена. \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:16:13,058] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:16:13,059] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:16:15,257] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:16:16,312] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:16:16,312] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:16:22,307] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("'dict' object has no attribute '__dict__'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 82, in answer_for_state_Q2
+    print(data.__dict__)
+AttributeError: 'dict' object has no attribute '__dict__'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:16:52,032] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:16:52,032] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:16:53,811] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:16:54,543] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:16:54,543] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:16:59,869] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 89, in answer_for_state_Q2
+    await message.answer(f"Ваша ссылка на профиль: {answer1} \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:24:35,307] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:24:35,307] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:24:36,190] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:24:36,338] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:24:36,338] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:24:43,744] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 96, in answer_for_state_Q2
+    await message.answer(f"Ваша ссылка на профиль\: {answer1} \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:27:03,961] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:27:03,962] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:27:04,834] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:27:04,972] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:27:04,972] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-07-31 20:27:17,029] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 96, in answer_for_state_Q2
+    await message.answer(f"Ваша ссылка на профиль\\: {answer1} \n"
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\types\message.py", line 397, in answer
+    return await self.bot.send_message(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 339, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:30:14,278] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:30:14,279] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:30:15,187] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:30:15,329] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:30:15,329] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:52:34,962] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:52:34,963] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:52:37,279] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:52:38,358] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:52:38,358] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:53:09,880] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:53:09,881] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 20:53:12,197] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 20:53:13,225] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 20:53:13,225] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 20:58:45,830] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 20:58:45,830] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 21:28:24,091] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 21:28:24,804] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 21:28:24,804] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 21:29:03,958] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 21:29:03,958] Goodbye!
+executor.py [LINE:362] #INFO     [2022-07-31 21:29:04,817] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-07-31 21:29:04,947] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-07-31 21:29:04,948] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-07-31 21:39:05,391] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-07-31 21:39:05,392] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 19:13:30,614] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 19:13:31,084] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 19:13:31,084] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 19:48:53,518] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 19:48:53,518] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 19:48:54,953] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 19:48:55,090] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 19:48:55,090] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 19:49:25,574] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 19:49:25,575] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 19:49:27,878] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 19:49:28,644] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 19:49:28,644] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-08-01 19:49:30,948] Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: can't find end of bold entity at byte offset 67")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 219, in show_statistic
+    await bot.edit_message_text(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 2740, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of bold entity at byte offset 67
+dispatcher.py [LINE:433] #INFO     [2022-08-01 19:50:45,906] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 19:50:45,906] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 19:50:47,491] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 19:50:47,636] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 19:50:47,637] Start polling.
+base_events.py [LINE:1744] #ERROR    [2022-08-01 19:50:50,549] Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=CantParseEntities("Can't parse entities: character '.' is reserved and must be escaped with the preceding '\\'")>
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\User\Desktop\WORK\UseFullCharm_bot (telebot)\create_magic_bot\main.py", line 219, in show_statistic
+    await bot.edit_message_text(
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\bot.py", line 2740, in edit_message_text
+    result = await self.request(api.Methods.EDIT_MESSAGE_TEXT, payload)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\User\Desktop\WORK\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+dispatcher.py [LINE:433] #INFO     [2022-08-01 19:52:30,057] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 19:52:30,058] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 19:52:32,554] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 19:52:33,528] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 19:52:33,529] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:17:12,613] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:17:12,614] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:17:13,829] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:17:13,959] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:17:13,960] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:33:13,510] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:33:13,511] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:33:14,787] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:33:14,904] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:33:14,905] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:34:10,358] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:34:10,358] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:34:11,557] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:34:11,690] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:34:11,691] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:34:55,604] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:34:55,604] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:34:57,285] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:34:57,420] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:34:57,420] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:35:19,729] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:35:19,729] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:35:24,715] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:35:25,621] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:35:25,621] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:35:39,820] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:35:39,820] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:35:42,599] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:35:43,628] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:35:43,628] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 20:37:45,139] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 20:37:45,140] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 20:38:34,032] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 20:38:34,917] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 20:38:34,917] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 21:09:57,323] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 21:09:57,323] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 21:09:58,484] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 21:09:58,627] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 21:09:58,627] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 21:43:38,692] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 21:43:38,693] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 21:43:40,102] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 21:43:40,236] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 21:43:40,236] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 21:44:18,771] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 21:44:18,772] Goodbye!
+executor.py [LINE:362] #INFO     [2022-08-01 21:44:20,282] Bot: learning_bot [@learning_new_bot]
+executor.py [LINE:358] #WARNING  [2022-08-01 21:44:20,423] Updates were skipped successfully.
+dispatcher.py [LINE:358] #INFO     [2022-08-01 21:44:20,423] Start polling.
+dispatcher.py [LINE:433] #INFO     [2022-08-01 21:56:50,697] Stop polling...
+executor.py [LINE:329] #WARNING  [2022-08-01 21:56:50,698] Goodbye!
