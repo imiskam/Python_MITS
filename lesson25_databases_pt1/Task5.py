@@ -31,3 +31,5 @@ print(cursor.fetchall())
 with open("task5_database.txt", "w", encoding="UTF-8") as file:
     for row in cursor.execute("SELECT * FROM task5_table"):
         file.write(f"{row[0]}\t{row[1]}\t{row[2]}\n")
+
+conn.close()

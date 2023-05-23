@@ -46,3 +46,5 @@ elif len(rows) <= 5:
 conn.commit()
 cursor.execute("SELECT * FROM homework_table_1, homework_table_2")
 print(cursor.fetchall())
+
+conn.close()

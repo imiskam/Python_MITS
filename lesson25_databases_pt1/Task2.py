@@ -34,3 +34,5 @@ if average > cursor.execute("SELECT COUNT(*) FROM task2_table").fetchone()[0]:
     print("Четвертая запись удалена")
     cursor.execute("SELECT col_1, col_2 FROM task2_table")
     print(cursor.fetchall())
+
+conn.close()

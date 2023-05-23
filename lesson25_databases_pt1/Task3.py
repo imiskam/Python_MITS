@@ -35,3 +35,5 @@ conn.commit()
 
 cursor.execute("SELECT * FROM task3_table")
 print("ПОСЛЕ:", cursor.fetchall())
+
+conn.close()

@@ -26,3 +26,4 @@ print(rows)
 for row in rows:
     print("\n".join(map(str, row)))
 
+conn.close()

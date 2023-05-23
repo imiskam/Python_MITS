@@ -9,7 +9,6 @@
 import sqlite3
 
 conn = sqlite3.connect("task4_database.db")
-
 cursor = conn.cursor()
 
 cursor.execute("""CREATE TABLE IF NOT EXISTS task4_table
@@ -37,3 +36,5 @@ database = Database()
 database.add_to_database("1", "1", 1)
 cursor.execute("SELECT * FROM task4_table")
 print(cursor.fetchall())
+
+conn.close()
