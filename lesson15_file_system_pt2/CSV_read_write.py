@@ -13,7 +13,7 @@ with open("diski.csv", encoding="utf-8") as file_r:
 
 # write csv
 with open("diski.csv", "a", encoding="utf-8", newline="") as file_w:
-    file_writer = csv.writer(file_w,)
+    file_writer = csv.writer(file_w)
     data_w = [["New User", "test@email.com", "150", "5.4 MB", "10.0 GB"], ["New User 2", "test2@email.com", "200", "50 MB", "10.0 GB"]]
     for row in data_w:
         file_writer.writerow(row)
